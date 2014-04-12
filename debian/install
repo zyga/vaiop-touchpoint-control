@@ -1,0 +1,2 @@
+disable-touchpoint.conf /usr/share/upstart/sessions
+enable-touchpoint.conf /usr/share/upstart/sessions

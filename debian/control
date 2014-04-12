@@ -1,0 +1,16 @@
+Source: vaiop-touchpoint-control
+Section: utils
+Priority: optional
+Maintainer: Zygmunt Krynicki <zygmunt.krynicki@canonical.com>
+Homepage: https://github.com/zyga/vaiop-touchpoint-control
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+
+Package: vaiop-touchpoint-control
+Architecture: all
+Depends: ${misc:Depends}, upstart (>= 1.12.1), xinput
+Description: Automatic control of VAIO-P built-in "mouse" when external mouse is present
+ This package contains two small Upstart jobs (for Ubuntu and other systems
+ running upstart as session init) that detect the insertion and removal of an
+ external mouse and in turn disable and enable the built-in touchpoint/touchpad
+ present on the 2nd-gen VAIO-P laptops.
