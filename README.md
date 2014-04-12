@@ -21,17 +21,13 @@ mouse is removed the built-in "mouse" is re-enabled.
 Installation
 ============ 
 
-The recommended method is to copy the two .conf files to system wide session
-job directory.
+On Ubuntu 14.04 you can just use my PPA:
 
-$ cp \*.conf /usr/share/upstart/sessions/
+```
+$ sudo add-apt-repository ppa:zkrynicki/ppa
+$ sudo apt-get update
+$ sudo apt-get install vaiop-touchpoint-control
+```
 
-The root-less alternative is to copy them to the per-user directory:
-
-$ cp \*.conf ~/.config.upstart
-
-Debian Package
-==============
-
-As a quick alternative to manual installation, run dpkg-buildpackage and
-install the resulting package on your system.
+As a quick alternative to adding yet-another-ppa just clone this repository,
+run 'dpkg-buildpackage' and install the resulting package on your system.
